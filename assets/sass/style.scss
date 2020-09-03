@@ -5,39 +5,45 @@
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 
     .tabs {
         position: fixed;
         min-height: 100%;
         min-width: 100%;
         background: radial-gradient(#f0e9bb, #ddbe0d);
+        padding: 30px;
 
         .container {
             max-width: 800px;
-            height: 700px;
+            height: 600px;
             margin: 0 auto;
             margin-top: 100px;
             background: white;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            overflow: hidden;
 
             .tab {
-                background: #555;
-                color: white;
+                background: white;
+                color: #555;
                 float: left;
                 border: none;
                 outline: none;
                 padding: 14px 16px;
-                font-size: 17px;
+                font-size: 20px;
+                font-weight: bold;
                 width: calc(100% /3);
 
-
                 &:hover {
-                    background: gray;
+                    background: teal;
                     transition: all, 0.2s;
+                    color: white;
                 }
 
                 &.active {
                     background: teal;
+                    color: white;
                 }
             }
 
@@ -45,13 +51,24 @@ body {
                 display: none;
                 padding: 100px 40px;
                 height: 100%;
-
+                color: white;
+                background: teal;
 
                 &.active {
                     display: block;
                 }
-            }
 
+                h3 {
+                    // color: gray;
+                    font-size: 30px;
+                }
+
+                p {
+                    // color: #555555;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
         }
     }
 }
